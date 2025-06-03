@@ -39,7 +39,7 @@ def get_silver_prices():
         base_price = price_per_gram_usd * usd_to_myr * 1000  # MYR/kg
 
         we_buy = round(base_price * 0.8, 2)
-        we_sell = round(base_price * 1.2, 2)
+        we_sell = round(base_price * 1.15, 2)
 
         return {
             "spot_price": round(base_price, 2),
