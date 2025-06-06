@@ -38,16 +38,21 @@ def get_silver_prices():
         price_per_gram_usd = xag_price_usd_oz / 31.1035
         base_price = price_per_gram_usd * usd_to_myr * 1000  # MYR/kg
 
-        we_buy = round(base_price * 0.8, 2)
+        we_buy = round(base_price * 0.75, 2)
         we_sell = round(base_price * 1.15, 2)
+        we_buy_100g = round(base_price * 0.75 * 100 / 1000, 2)
+        we_sell_100g = round(base_price * 1.35 * 100 / 1000, 2)
 
-        return {
-            "spot_price": round(base_price, 2),
-            "currency": "MYR",
-            "purity": "999",
-            "we_buy": we_buy,
-            "we_sell": we_sell
-        }
+return {
+    "spot_price": round(base_price, 2),
+    "currency": "MYR",
+    "purity": "999",
+    "we_buy": we_buy,
+    "we_sell": we_sell,
+    "we_buy_100g": we_buy_100g,
+    "we_sell_100g": we_sell_100g
+}
+
 
     except Exception as e:
         return {"error": f"Failed to retrieve silver price: {str(e)}"}
