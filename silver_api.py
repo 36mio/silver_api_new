@@ -38,7 +38,7 @@ def get_silver_prices():
         price_per_gram_usd = xag_price_usd_oz / 31.1035
         base_price = price_per_gram_usd * usd_to_myr * 1000  # MYR/kg
 
-        we_buy = round(base_price * 0.75, 2)
+        we_buy = round(base_price * 0.80, 2)
         we_sell = round(base_price * 1.15, 2)
 
 return {
