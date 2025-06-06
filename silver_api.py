@@ -40,17 +40,13 @@ def get_silver_prices():
 
         we_buy = round(base_price * 0.75, 2)
         we_sell = round(base_price * 1.15, 2)
-        we_buy_100g = round(base_price * 0.75 * 100 / 1000, 2)
-        we_sell_100g = round(base_price * 1.35 * 100 / 1000, 2)
 
 return {
     "spot_price": round(base_price, 2),
     "currency": "MYR",
     "purity": "999",
     "we_buy": we_buy,
-    "we_sell": we_sell,
-    "we_buy_100g": we_buy_100g,
-    "we_sell_100g": we_sell_100g,
+    "we_sell": we_sell
 }
 
 
