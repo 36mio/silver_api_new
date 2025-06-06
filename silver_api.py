@@ -50,7 +50,7 @@ return {
     "we_buy": we_buy,
     "we_sell": we_sell,
     "we_buy_100g": we_buy_100g,
-    "we_sell_100g": we_sell_100g
+    "we_sell_100g": we_sell_100g,
 }
 
 
